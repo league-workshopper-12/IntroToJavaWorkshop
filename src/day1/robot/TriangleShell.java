@@ -5,7 +5,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class TriangleShell {
 
 	// 1. Create a new Robot
-
+Robot r2d2=new Robot();
 	
 	void go() {
 		drawTriangle(100); // 3. delete this line (used only for testing)
@@ -28,7 +28,13 @@ public class TriangleShell {
 
 	/* 2. fill in the method below to draw a triangle. Use the length variable for the size of the triangle. */
 	private void drawTriangle(int length) {
-		
+	for (int i = 0; i < 3; i++) {
+r2d2.penDown();
+r2d2.setRandomPenColor();
+r2d2.hide();
+r2d2.turn(120);
+r2d2.move(100);
+	}	
 		
 		
 	}
